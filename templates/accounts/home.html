@@ -3,11 +3,55 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-<section class="panel">
-    <h1>Student Management System</h1>
-    <p>Login to access your dashboard. Admin users can onboard students, faculty, parents, and other admins.</p>
-    <div class="actions">
-        <a class="button primary" href="{% url 'accounts:login' %}">Login</a>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Student Management System</h1>
+        <p class="hero-subtitle">Streamline your educational institution with our comprehensive management platform</p>
+        <div class="hero-features">
+            <div class="feature-item">
+                <span class="feature-icon">📚</span>
+                <span class="feature-text">Learning Management</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">👥</span>
+                <span class="feature-text">User Management</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">📊</span>
+                <span class="feature-text">Analytics & Reports</span>
+            </div>
+        </div>
+        <a class="button button-lg primary" href="{% url 'accounts:login' %}">Get Started</a>
+    </div>
+</section>
+
+<section class="features-section">
+    <h2>Key Features</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Admin Dashboard</h3>
+            <p>Manage students, faculty, parents, and admins all from one centralized dashboard.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Learning Platform</h3>
+            <p>Access study materials, assignments, and track academic progress with ease.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Attendance Tracking</h3>
+            <p>Monitor attendance records and generate detailed reports for better insights.</p>
+        </div>
+        <div class="feature-card">
+            <h3>AI Chatbot Support</h3>
+            <p>Get instant answers and support from our intelligent chatbot assistant.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Results & Grades</h3>
+            <p>Publish and manage student results with secure access controls.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Placement Portal</h3>
+            <p>Connect students with placement opportunities and track career progress.</p>
+        </div>
     </div>
 </section>
 {% endblock %}
